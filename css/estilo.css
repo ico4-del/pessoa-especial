@@ -1,4 +1,3 @@
-/* Fundo de céu noturno com estrelas */
 body {
   background-color: #000;
   background-image: radial-gradient(white 1px, transparent 1px),
@@ -9,25 +8,43 @@ body {
   color: #fff;
   margin: 0;
   padding: 0;
+  animation: estrelasPiscar 2s infinite alternate;
 }
 
-/* Nome do Heitor bem grande */
+@keyframes estrelasPiscar {
+  from { opacity: 1; }
+  to { opacity: 0.6; }
+}
+
 .nome-heitor {
   font-size: 5em;
   text-align: right;
   margin: 40px 60px 20px 0;
-  text-shadow: 0 0 15px #fff, 0 0 30px #87ceeb;
+  color: #d3d3d3;
+  text-shadow: 0 0 10px #444;
+  animation: luaBrilho 3s infinite alternate;
 }
 
-/* Nome da Isabelle menor mas no mesmo estilo */
+@keyframes luaBrilho {
+  from { text-shadow: 0 0 10px #444; }
+  to { text-shadow: 0 0 25px #fff; }
+}
+
 .nome-isabelle {
   font-size: 3em;
   text-align: right;
   margin: 20px 60px;
-  text-shadow: 0 0 10px #fff, 0 0 20px #87ceeb;
+  color: #d3d3d3;
+  text-shadow: 0 0 8px #444;
+  display: inline-block;
+  animation: solGirando 6s linear infinite;
 }
 
-/* Texto concentrado no lado direito */
+@keyframes solGirando {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
 .conteudo {
   display: flex;
   flex-direction: column;
