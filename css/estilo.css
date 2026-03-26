@@ -9,6 +9,7 @@ body {
   margin: 0;
   padding: 0;
   animation: estrelasPiscar 2s infinite alternate;
+  text-align: center;
 }
 
 @keyframes estrelasPiscar {
@@ -18,8 +19,7 @@ body {
 
 .nome-heitor {
   font-size: 5em;
-  text-align: right;
-  margin: 40px 60px 20px 0;
+  margin: 40px 0 20px 0;
   color: #d3d3d3;
   text-shadow: 0 0 10px #444;
   animation: luaBrilho 3s infinite alternate;
@@ -31,9 +31,8 @@ body {
 }
 
 .nome-isabelle {
-  font-size: 3em;
-  text-align: right;
-  margin: 20px 60px;
+  font-size: 2.7em;
+  margin: 20px 0;
   color: #d3d3d3;
   text-shadow: 0 0 8px #444;
 }
@@ -41,13 +40,13 @@ body {
 .conteudo {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  padding: 20px 60px;
+  align-items: center;
+  padding: 20px;
 }
 
 .mensagem {
   max-width: 600px;
-  text-align: right;
+  text-align: center;
   font-size: 1.5em;
   line-height: 1.6;
   animation: textoPiscar 2s infinite alternate;
@@ -59,9 +58,9 @@ body {
 }
 
 .foto-casal {
-  width: 250px;
-  border-radius: 15px;
+  width: 800px;
+  border-radius: 0;
   box-shadow: 0 0 15px #444;
-  float: left;
-  margin: 20px;
+  margin: 20px auto;
+  display: block;
 }
